@@ -44,4 +44,4 @@ Contributions are welcome! If you have suggestions or bug reports, feel free to 
 
 <h2>💬 Contact</h2>
 GitHub: <a href="https://github.com/Rukundo-Bahati">Rukundo Bahati</a>
-LinkedIn: <a href="https://www.linkedin.com/in/bahati-samuel-293578302/">My Linked In Profile</a>
+LinkedIn: <a href="www.linkedin.com/in/bahati-samuel-293578302">My Linked In Profile</a>
