@@ -5,6 +5,7 @@ export default function Home() {
   const [mood, setMood] = useState('');
   const [playlists, setPlaylists] = useState([]);
   const [accessToken, setAccessToken] = useState('');
+  const [loading, setLoading] = useState(false); // Add loading state
 
   // Fetch Spotify Access Token
   const fetchSpotifyToken = async () => {
@@ -12,7 +13,6 @@ export default function Home() {
       const response = await fetch('/api/getSpotifyToken');
       const data = await response.json();
       setAccessToken(data.accessToken);
-      console.log('Access Token:', data.accessToken); // Debug log
     } catch (error) {
       console.error('Error fetching Spotify token:', error);
     }
@@ -28,6 +28,8 @@ export default function Home() {
       return;
     }
 
+    setLoading(true); // Set loading to true when fetching starts
+
     console.log('Fetching playlists for mood:', mood); // Debug log
 
     try {
@@ -39,14 +41,16 @@ export default function Home() {
 
       if (!response.ok) {
         console.error('Error with Spotify API response:', response.status, response.statusText);
+        setLoading(false);
         return;
       }
 
       const data = await response.json();
-      console.log('Playlists:', data.playlists.items); // Debug log
       setPlaylists(data.playlists.items);
     } catch (error) {
       console.error('Error fetching playlists:', error);
+    } finally {
+      setLoading(false); // Set loading to false when fetching is done
     }
   };
 
@@ -64,9 +68,11 @@ export default function Home() {
         <button
           onClick={fetchPlaylists}
           className="w-full max-w-md p-2 mb-6 bg-purple-600 hover:bg-purple-700 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
+          disabled={loading} // Disable button while loading
         >
-          Get Playlists
+          {loading ? 'Fetching playlist...' : 'Get Playlists'}
         </button>
+        {loading && <p>Loading playlists...</p>}
         <ul className="w-full max-w-md space-y-4">
           {playlists.map((playlist) => (
             <li key={playlist.id} className="bg-gray-800 p-4 rounded shadow-lg">
