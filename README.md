@@ -1,4 +1,5 @@
 <h1>🎶Mood Playlist Generator🎶🎶</h1>
+<img src="/public/photo.png" />
 <p>The Mood Playlist Generator is a web application that generates Spotify playlists based on the user's mood. Users simply input their mood, and the app fetches a playlist from Spotify that matches their current feelings.</p>
 
 <h3>⭐🌟Features</h3>

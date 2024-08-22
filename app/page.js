@@ -90,11 +90,6 @@ export default function Home() {
   
   
   return (
-    <>
-   
-    <Head>
-    <link rel="icon" href="/favicon.ico" />
-  </Head>
 
     <div className="min-h-screen bg-gradient-to-r from-indigo-900 via-purple-900 to-indigo-900 text-white flex flex-col items-center justify-center p-6 relative overflow-hidden">
       {/* Decorative elements */}
@@ -255,6 +250,5 @@ export default function Home() {
         ))}
       </ul>
     </div>
-    </>
   );
 }
