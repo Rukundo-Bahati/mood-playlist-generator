@@ -30,9 +30,9 @@ Open <a href="">http://localhost:3000</a>  in your browser to see the app.
 <p>GET /api/getSpotifyToken: Fetches the Spotify access token required to interact with the Spotify Web API.</p>
 
 <h2>🎨 Tech Stack</h2>
-Next.js: React framework for building web applications.
-Spotify API: For fetching playlists based on user mood.
-Tailwind CSS: Utility-first CSS framework for styling.
+<p>Next.js: React framework for building web applications.</p>
+<p>Spotify API: For fetching playlists based on user mood.</p>
+<p>Tailwind CSS: Utility-first CSS framework for styling.</p>
 
 <h2>🤝 Contributing</h2>
 Contributions are welcome! If you have suggestions or bug reports, feel free to open an issue or submit a pull request.
