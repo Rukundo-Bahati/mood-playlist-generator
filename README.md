@@ -37,11 +37,12 @@ Open <a href="">http://localhost:3000</a>  in your browser to see the app.
 <h2>🤝 Contributing</h2>
 Contributions are welcome! If you have suggestions or bug reports, feel free to open an issue or submit a pull request.
 
-1.Fork the project
-2.Create your feature branch: git checkout -b feature/your-feature-name
-3.Commit your changes: git commit -m 'Add some feature'
-4.Push to the branch: git push origin feature/your-feature-name
-5.Open a pull request
+<h1>1.Fork the project</h1>
+
+<p>2.Create your feature branch: git checkout -b feature/your-feature-name</p>
+<p>3.Commit your changes: git commit -m 'Add some feature'</p>
+<p>4.Push to the branch: git push origin feature/your-feature-name</p>
+<p>5.Open a pull request</p>
 
 <h2>💬 Contact</h2>
 GitHub: <a href="https://github.com/Rukundo-Bahati">Rukundo Bahati</a>
